@@ -65,6 +65,7 @@
             </div>
 
         </div>
+        
 
 
         <div class="row box">
@@ -81,6 +82,54 @@
                 <p>Brindamos soporte técnico y mantenimiento constante para asegurar el funcionamiento óptimo de tus aplicaciones.</p>
             </div>
         </div>
+
+        <div class="row box">
+            <div class="col card">
+                <h2>MicroStart</h2>
+                <h3>Microsoft 365</h3>
+                <p>Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+            </div>
+            <div class="col card">
+                <h2>GrowthSite</h2>
+                <h3>Microsoft 365</h3>
+                <p>Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+            </div>
+            <div class="col card">
+                <h2>ProWeb</h2>
+                <h3>Microsoft 365</h3>
+                <p>Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+            </div>
+            <div class="col card">
+                <h2>EnterpriseHub</h2>
+                <h3>Microsoft 365</h3>
+                <p>Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+            </div>
+        </div>
+
+        <div class="row box">
+            <div class="col card">
+                <h2>MicroStart</h2>
+                <h3>Google Workspace</h3>
+                <p>Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+            </div>
+            <div class="col card">
+                <h2>GrowthSite</h2>
+                <h3>Google Workspace</h3>
+                <p>Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+            </div>
+            <div class="col card">
+                <h2>ProWeb</h2>
+                <h3>Google Workspace</h3>
+                <p>Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+            </div>
+            <div class="col card">
+                <h2>EnterpriseHub</h2>
+                <h3>Google Workspace</h3>
+                <p>Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+            </div>
+        </div>
+
+ 
 
 
 
