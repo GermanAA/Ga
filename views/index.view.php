@@ -12,8 +12,8 @@
 
 <body>
 
-    <div class="container text-center">
-      
+    <div class="container">
+
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -65,71 +65,129 @@
             </div>
 
         </div>
-        
+
 
 
         <div class="row box">
-            <div class="col card">
+            <div class="col-sm-4 card">
                 <h2>Soluciones Personalizadas</h2>
                 <p>Adaptamos nuestras soluciones a las necesidades específicas de tu negocio.</p>
             </div>
-            <div class="col card">
+            <div class="col-sm-4 card">
                 <h2>Diseño Responsivo</h2>
                 <p>Garantizamos una experiencia de usuario óptima en cualquier dispositivo.</p>
             </div>
-            <div class="col card">
+            <div class="col-sm-4 card">
                 <h2>Soporte Continuo</h2>
                 <p>Brindamos soporte técnico y mantenimiento constante para asegurar el funcionamiento óptimo de tus aplicaciones.</p>
             </div>
         </div>
 
         <div class="row box">
-            <div class="col card">
-                <h2>MicroStart</h2>
-                <h3>Microsoft 365</h3>
-                <p>Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">MicroStart</h2>
+                <h3 class="text-center">Microsoft 365</h3>
+                <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
+
             </div>
-            <div class="col card">
-                <h2>GrowthSite</h2>
-                <h3>Microsoft 365</h3>
-                <p>Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">GrowthSite</h2>
+                <h3 class="text-center">Microsoft 365</h3>
+                <p class="text-center">Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
+                
             </div>
-            <div class="col card">
-                <h2>ProWeb</h2>
-                <h3>Microsoft 365</h3>
-                <p>Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">ProWeb</h2>
+                <h3 class="text-center">Microsoft 365</h3>
+                <p class="text-center">Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
-            <div class="col card">
-                <h2>EnterpriseHub</h2>
-                <h3>Microsoft 365</h3>
-                <p>Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">EnterpriseHub</h2>
+                <h3 class="text-center">Microsoft 365</h3>
+                <p class="text-center">Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
         </div>
 
         <div class="row box">
-            <div class="col card">
-                <h2>MicroStart</h2>
-                <h3>Google Workspace</h3>
-                <p>Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">MicroStart</h2>
+                <h3 class="text-center">Google Workspace</h3>
+                <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
-            <div class="col card">
-                <h2>GrowthSite</h2>
-                <h3>Google Workspace</h3>
-                <p>Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">GrowthSite</h2>
+                <h3 class="text-center">Google Workspace</h3>
+                <p class="text-center">Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
-            <div class="col card">
-                <h2>ProWeb</h2>
-                <h3>Google Workspace</h3>
-                <p>Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">ProWeb</h2>
+                <h3 class="text-center">Google Workspace</h3>
+                <p class="text-center">Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
-            <div class="col card">
-                <h2>EnterpriseHub</h2>
-                <h3>Google Workspace</h3>
-                <p>Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+            <div class="col-sm-6 col-md-3 card-pricing">
+                <h2 class="text-center">EnterpriseHub</h2>
+                <h3 class="text-center">Google Workspace</h3>
+                <p class="text-center">Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
+                <ul>
+                    <li>SSL</li>
+                    <li>Nombre de Dominio</li>
+                    <li>Hosting</li>
+                    <li>Correo Electrónico Profesional</li>
+                    <li>Gestión Microsoft 365</li>
+                </ul>
             </div>
         </div>
 
- 
+
 
 
 
@@ -181,7 +239,7 @@
 
         <div class="row box">
             <footer>
-                <p>&copy; GA Tech. Todos los derechos reservados.</p>
+                <p class="card">&copy; GA Tech. Todos los derechos reservados.</p>
             </footer>
         </div>
 
