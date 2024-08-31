@@ -54,17 +54,21 @@
             </div>
         </nav>
 
-
         <div class="row card text-center box">
+            <canvas id="particleCanvas">
+
+            </canvas>
             <div class="card-body">
                 <h1>Desarrollo Web de Alta Calidad</h1>
                 <p>Potencia tu negocio con soluciones web innovadoras y personalizadas.</p>
-
                 <a href="#myForm" type="button" class="btn btn-primary btn-lg">Contáctanos</a>
 
             </div>
 
         </div>
+
+
+
 
 
 
@@ -86,103 +90,61 @@
         <div class="row box">
             <div class="col-sm-6 col-md-3 card-pricing">
                 <h2 class="text-center">MicroStart</h2>
-                <h3 class="text-center">Microsoft 365</h3>
+
                 <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
+                <h3 class="text-center"><span>4,640</span><span class="Currency"> MXN</span> </h3>
                 <ul>
                     <li>SSL</li>
                     <li>Nombre de Dominio</li>
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
+                    <li>Usuarios de 1 a 10</li>
                     <li>Gestión Microsoft 365</li>
+
+                    <li>Google Workspace</li>
                 </ul>
 
             </div>
             <div class="col-sm-6 col-md-3 card-pricing">
                 <h2 class="text-center">GrowthSite</h2>
-                <h3 class="text-center">Microsoft 365</h3>
                 <p class="text-center">Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
+                <h3 class="text-center"><span class="text-center">8,120</span><span class="Currency"> MXN</span></h3>
                 <ul>
                     <li>SSL</li>
                     <li>Nombre de Dominio</li>
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
+                    <li>Usuarios de 11 a 30</li>
                     <li>Gestión Microsoft 365</li>
+                    <li>Google Workspace</li>
                 </ul>
-                
+
             </div>
             <div class="col-sm-6 col-md-3 card-pricing">
                 <h2 class="text-center">ProWeb</h2>
-                <h3 class="text-center">Microsoft 365</h3>
                 <p class="text-center">Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
+                <h3 class="text-center"><span class="text-center">13,920</span><span class="Currency"> MXN</span></h3>
                 <ul>
                     <li>SSL</li>
                     <li>Nombre de Dominio</li>
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
+                    <li>Desde 30 Usuarios</li>
                     <li>Gestión Microsoft 365</li>
+                    <li>Google Workspace</li>
                 </ul>
             </div>
             <div class="col-sm-6 col-md-3 card-pricing">
                 <h2 class="text-center">EnterpriseHub</h2>
-                <h3 class="text-center">Microsoft 365</h3>
                 <p class="text-center">Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
                 <ul>
                     <li>SSL</li>
                     <li>Nombre de Dominio</li>
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
+                    <li>Personaliza el número de Usuarios</li>
                     <li>Gestión Microsoft 365</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row box">
-            <div class="col-sm-6 col-md-3 card-pricing">
-                <h2 class="text-center">MicroStart</h2>
-                <h3 class="text-center">Google Workspace</h3>
-                <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
-                <ul>
-                    <li>SSL</li>
-                    <li>Nombre de Dominio</li>
-                    <li>Hosting</li>
-                    <li>Correo Electrónico Profesional</li>
-                    <li>Gestión Microsoft 365</li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
-                <h2 class="text-center">GrowthSite</h2>
-                <h3 class="text-center">Google Workspace</h3>
-                <p class="text-center">Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
-                <ul>
-                    <li>SSL</li>
-                    <li>Nombre de Dominio</li>
-                    <li>Hosting</li>
-                    <li>Correo Electrónico Profesional</li>
-                    <li>Gestión Microsoft 365</li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
-                <h2 class="text-center">ProWeb</h2>
-                <h3 class="text-center">Google Workspace</h3>
-                <p class="text-center">Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
-                <ul>
-                    <li>SSL</li>
-                    <li>Nombre de Dominio</li>
-                    <li>Hosting</li>
-                    <li>Correo Electrónico Profesional</li>
-                    <li>Gestión Microsoft 365</li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
-                <h2 class="text-center">EnterpriseHub</h2>
-                <h3 class="text-center">Google Workspace</h3>
-                <p class="text-center">Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
-                <ul>
-                    <li>SSL</li>
-                    <li>Nombre de Dominio</li>
-                    <li>Hosting</li>
-                    <li>Correo Electrónico Profesional</li>
-                    <li>Gestión Microsoft 365</li>
+                    <li>Google Workspace</li>
                 </ul>
             </div>
         </div>

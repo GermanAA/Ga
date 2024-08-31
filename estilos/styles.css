@@ -14,6 +14,16 @@ nav{
     padding: 0;
 }
 
+footer{
+   
+    height: 150px;
+}
+
+      /* Estilo del canvas */
+canvas {      
+        display: block;
+    }
+
 .row{
    height: 100%;
     background: rgb(31, 35, 40);
@@ -21,7 +31,13 @@ nav{
 }
 
 .card-body{
-    height: 350px;
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    pointer-events: none; /* Hace que el texto no interfiera con el canvas */
 }
 
 
@@ -39,8 +55,7 @@ p, li{
 
     .card-pricing{
         background: #fdfdfd;
-        border-radius: 8px;
-        
+        border-radius: 8px;        
         color: black;
         height: 350px;
     }
@@ -69,15 +84,13 @@ p, li{
     transform: translateY(0);
 }
 
-footer{
-   
-    height: 250px;
-}
+
 
 .card{
     
     background: rgb(31, 35, 40);
     color: #fdfdfd;
+    position: relative;
     
 }
 
@@ -86,5 +99,22 @@ footer{
     border-radius: 10px;
     margin-top: 1px;
     color: black;
-    height: 350px;
+    height: 400px;
 }
+
+
+
+div.card-pricing > h3{
+    font-size: 20px;
+}
+
+.Currency{
+    font-size: 12px;
+}
+div.card-pricing > p{
+    font-size: 12px;
+}
+div.card-pricing > li{
+    font-size: 12px;
+}
+

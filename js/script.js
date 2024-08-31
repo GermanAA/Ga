@@ -66,3 +66,81 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  window.onload = function () {
+    const canvas = document.getElementById('particleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particlesArray = [];
+    const numberOfParticles = 100;
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    class Particle {
+        constructor(x, y, size, dx, dy) {
+            this.x = x;
+            this.y = y;
+            this.size = size;
+            this.color = getRandomColor(); // Asignar un color aleatorio
+            this.dx = dx;
+            this.dy = dy;
+        }
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+
+        update() {
+            if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+                this.dx = -this.dx;
+            }
+            if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+                this.dy = -this.dy;
+            }
+            this.x += this.dx;
+            this.y += this.dy;
+        }
+    }
+
+    function init() {
+        for (let i = 0; i < numberOfParticles; i++) {
+            let size = Math.random() * 5 + 2;
+            let x = Math.random() * (canvas.width - size * 2) + size;
+            let y = Math.random() * (canvas.height - size * 2) + size;
+            let dx = (Math.random() - 0.5) * 2;
+            let dy = (Math.random() - 0.5) * 2;
+            particlesArray.push(new Particle(x, y, size, dx, dy));
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < particlesArray.length; i++) {
+            particlesArray[i].update();
+            particlesArray[i].draw();
+        }
+        requestAnimationFrame(animate);
+    }
+
+    init();
+    animate();
+
+    window.addEventListener('resize', function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+}
+
