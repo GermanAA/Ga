@@ -1,6 +1,6 @@
 <?php
 
-require 'views/index.view.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h4 class='alert-heading'>Gracias, $nombreCliente</h4>
                 <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo a la brevedad posible.</p>
                 <hr>
-                <p class='mb-0'><a href='index.view.php' class='btn btn-primary'>Volver al formulario</a></p>
+                <p class='mb-0'><a href='index.php' class='btn btn-primary'>Volver al formulario</a></p>
             </div>
         </div>
         <!-- Bootstrap JS and dependencies (optional) -->
@@ -49,3 +49,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+
+require 'views/index.view.php';
