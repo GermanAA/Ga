@@ -30,7 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#Pricing">Pricing</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" aria-disabled="true" href="#Contacto">Contacto</a>
                         </li>
@@ -81,16 +81,20 @@
                 <h2 class="text-center">MicroStart</h2>
 
                 <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
-                <h3 class="text-center"><span>4,640</span><span class="Currency"> MXN</span> </h3>
+                <h3 class="text-center"><span>5,840</span><span class="Currency"> MXN</span> </h3>
                 <ul>
                     <li>SSL</li>
                     <li>Nombre de Dominio</li>
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
                     <li>Usuarios de 1 a 10</li>
-                    <li>Gestión Microsoft 365</li>
-
-                    <li>Google Workspace</li>
+                    <li>Gestión de una Cuenta
+                    <ul>
+                        <li>Microsoft 365</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                    </li>
+                    
                 </ul>
 
             </div>
@@ -104,8 +108,12 @@
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
                     <li>Usuarios de 11 a 30</li>
-                    <li>Gestión Microsoft 365</li>
-                    <li>Google Workspace</li>
+                    <li>Gestión de 2 Cuentas
+                    <ul>
+                        <li>Microsoft 365</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                    </li>
                 </ul>
 
             </div>
@@ -119,8 +127,12 @@
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
                     <li>Desde 30 Usuarios</li>
-                    <li>Gestión Microsoft 365</li>
-                    <li>Google Workspace</li>
+                    <li>Gestión de 3 Cuentas
+                    <ul>
+                        <li>Microsoft 365</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-6 col-md-3 card-pricing">
