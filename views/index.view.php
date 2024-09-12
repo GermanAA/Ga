@@ -77,7 +77,7 @@
         </div>
 
         <div class="row box" id="Pricing">
-            <div class="col-sm-6 col-md-3 card-pricing">
+            <div class="col-sm-6 col-md-6 col-lg-3 card-pricing">
                 <h2 class="text-center">MicroStart</h2>
 
                 <p class="text-center">Ideal para microempresas o startups que están comenzando y necesitan una presencia web básica pero efectiva</p>
@@ -90,15 +90,18 @@
                     <li>Usuarios de 1 a 10</li>
                     <li>Gestión de una Cuenta
                     <ul>
-                        <li>Microsoft 365</li>
-                        <li>Google Workspace</li>
+                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                        <ul>
+                            <li>por un año</li>
+                        </ul>
+                        
                     </ul>
                     </li>
                     
                 </ul>
 
             </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
+            <div class="col-sm-6 col-md-6 col-lg-3 card-pricing">
                 <h2 class="text-center">GrowthSite</h2>
                 <p class="text-center">Enfocado en pequeñas empresas que buscan crecer y requieren una página web con funcionalidades adicionales</p>
                 <h3 class="text-center"><span class="text-center">8,120</span><span class="Currency"> MXN</span></h3>
@@ -110,14 +113,17 @@
                     <li>Usuarios de 11 a 30</li>
                     <li>Gestión de 2 Cuentas
                     <ul>
-                        <li>Microsoft 365</li>
-                        <li>Google Workspace</li>
+                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                        <ul>
+                            <li>por un año</li>
+                        </ul>
+                        
                     </ul>
                     </li>
                 </ul>
 
             </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
+            <div class="col-sm-6 col-md-6 col-lg-3 card-pricing">
                 <h2 class="text-center">ProWeb</h2>
                 <p class="text-center">Dirigido a medianas empresas que necesitan una solución web robusta, con características avanzadas y personalización a medida.</p>
                 <h3 class="text-center"><span class="text-center">13,920</span><span class="Currency"> MXN</span></h3>
@@ -129,13 +135,16 @@
                     <li>Desde 30 Usuarios</li>
                     <li>Gestión de 3 Cuentas
                     <ul>
-                        <li>Microsoft 365</li>
-                        <li>Google Workspace</li>
+                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                        <ul>
+                            <li>por un año</li>
+                        </ul>
+                        
                     </ul>
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-3 card-pricing">
+            <div class="col-sm-6 col-md-6 col-lg-3 card-pricing">
                 <h2 class="text-center">EnterpriseHub</h2>
                 <p class="text-center">Diseñado para grandes empresas que requieren una plataforma web escalable y altamente segura, con integraciones complejas y soporte continuo.</p>
                 <ul>
@@ -144,8 +153,15 @@
                     <li>Hosting</li>
                     <li>Correo Electrónico Profesional</li>
                     <li>Personaliza el número de Usuarios</li>
-                    <li>Gestión Microsoft 365</li>
-                    <li>Google Workspace</li>
+                    <li>Gestión de Cuentas
+                    <ul>
+                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                        <ul>
+                            <li>por un año</li>
+                        </ul>
+                        
+                    </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -202,7 +218,7 @@
         </form>
 
 
-        <div class="row box">
+        <div class="row">
             <footer>
                 <p class="card">&copy; GA Tech. Todos los derechos reservados.</p>
             </footer>
