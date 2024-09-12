@@ -9,6 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" type="text/css" href="fontello-a540fdbf\css\fontello.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11460488693">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11460488693');
+    </script>
 </head>
 
 <body>
@@ -89,15 +102,15 @@
                     <li>Correo Electrónico Profesional</li>
                     <li>Usuarios de 1 a 10</li>
                     <li>Gestión de una Cuenta
-                    <ul>
-                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
                         <ul>
-                            <li>por un año</li>
+                            <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                            <ul>
+                                <li>por un año</li>
+                            </ul>
+
                         </ul>
-                        
-                    </ul>
                     </li>
-                    
+
                 </ul>
 
             </div>
@@ -112,13 +125,13 @@
                     <li>Correo Electrónico Profesional</li>
                     <li>Usuarios de 11 a 30</li>
                     <li>Gestión de 2 Cuentas
-                    <ul>
-                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
                         <ul>
-                            <li>por un año</li>
+                            <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                            <ul>
+                                <li>por un año</li>
+                            </ul>
+
                         </ul>
-                        
-                    </ul>
                     </li>
                 </ul>
 
@@ -134,13 +147,13 @@
                     <li>Correo Electrónico Profesional</li>
                     <li>Desde 30 Usuarios</li>
                     <li>Gestión de 3 Cuentas
-                    <ul>
-                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
                         <ul>
-                            <li>por un año</li>
+                            <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                            <ul>
+                                <li>por un año</li>
+                            </ul>
+
                         </ul>
-                        
-                    </ul>
                     </li>
                 </ul>
             </div>
@@ -154,13 +167,13 @@
                     <li>Correo Electrónico Profesional</li>
                     <li>Personaliza el número de Usuarios</li>
                     <li>Gestión de Cuentas
-                    <ul>
-                        <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
                         <ul>
-                            <li>por un año</li>
+                            <li>Microsoft 365 Business Basic o Google Workspace Business Starter </li>
+                            <ul>
+                                <li>por un año</li>
+                            </ul>
+
                         </ul>
-                        
-                    </ul>
                     </li>
                 </ul>
             </div>
