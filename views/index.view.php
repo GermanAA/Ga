@@ -225,6 +225,7 @@
                         <textarea id="message" class="form-control" name="message" required></textarea>
                     </div>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
                 <div class="col-sm-12 col-md-10"><button type="submit" class="btn btn-primary" name="action">Enviar</button>
                 </div>
             </div>
@@ -244,6 +245,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
