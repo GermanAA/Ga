@@ -5,12 +5,15 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
-$secretKey = $_ENV['CAP_PASSWORD'] ?? '';
+
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-
+$secretKey = $_ENV['CAP_PASSWORD'] ?? '';
+if (empty($secretKey)) {
+    die("Error: No se encontraron las variables necesarias en el archivo .env.");
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
