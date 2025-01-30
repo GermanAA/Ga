@@ -49,8 +49,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail->addAddress($correo, $nombreCliente);
     $mail->isHTML(true);
     $mail->Subject = 'INSTRUCTIVO ADMISIONES, mi empresa';
-    $mail->Body = $correoready;
-    $mail->AltBody = $correo_plano;
+    //$mail->Body = $correoready;
+    $mail->Body = $comentario;
+    //$mail->AltBody = $correo_plano;
+    $mail->AltBody = $telefono;
     $mail->CharSet = 'UTF-8';
 
     if (!$mail->send()) {
