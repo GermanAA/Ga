@@ -1,5 +1,4 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -21,11 +20,11 @@ if (empty($secretKey) || empty($smtpUser) || empty($smtpPass)) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nombreCliente = $_POST['name'];
-    $correo = $_POST['email'];
-    $telefono = $_POST['phone'];
-    $comentario = $_POST['message'];
-    $recaptchaResponse = $_POST['g-recaptcha-response'];
+    $nombreCliente = $_POST['name'] ?? '';
+    $correo = $_POST['email'] ?? '';
+    $telefono = $_POST['phone'] ?? '';
+    $comentario = $_POST['message'] ?? '';
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
     // Validar el CAPTCHA con Google
     $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
@@ -39,20 +38,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (!empty($comentario)) {
         $destinatario = "armendariz.german@gmail.com";
-        $asunto = "GA Tech";
+        $asunto = "GA Tech - Contacto";
         $mensaje = "
         <!DOCTYPE html>
         <html lang='es'>
         <head>
             <meta charset='UTF-8'>
-            <title>Servicio Paquetería</title>
+            <title>Mensaje de Contacto</title>
+            <style>
+                body { font-family: Arial, sans-serif; }
+                h2 { color: #2c3e50; }
+                p { font-size: 14px; }
+            </style>
         </head>
         <body>
-            <h2>Detalles del cliente:</h2>
-            <p><strong>Nombre del cliente:</strong> " . htmlspecialchars($nombreCliente, ENT_QUOTES, 'UTF-8') . "</p>
+            <h2>Detalles del Cliente:</h2>
+            <p><strong>Nombre:</strong> " . htmlspecialchars($nombreCliente, ENT_QUOTES, 'UTF-8') . "</p>
             <p><strong>Correo:</strong> " . htmlspecialchars($correo, ENT_QUOTES, 'UTF-8') . "</p>
             <p><strong>Teléfono:</strong> " . htmlspecialchars($telefono, ENT_QUOTES, 'UTF-8') . "</p>
-            <p><strong>Comentario:</strong> " . nl2br(htmlspecialchars($comentario, ENT_QUOTES, 'UTF-8')) . "</p>
+            <p><strong>Mensaje:</strong> " . nl2br(htmlspecialchars($comentario, ENT_QUOTES, 'UTF-8')) . "</p>
         </body>
         </html>";
 
