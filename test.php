@@ -45,7 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail->Username = $smtpUser;
     $mail->Password = $smtpPass;
     $mail->SetFrom($smtpUser, 'DEPARTAMENTO DE SISTEMAS - mi empresa');
-    $mail->addAddress($correo_destinatario, $name);
+    //$mail->addAddress($correo_destinatario, $name);
+    $mail->addAddress($correo, $nombreCliente);
     $mail->isHTML(true);
     $mail->Subject = 'INSTRUCTIVO ADMISIONES, mi empresa';
     $mail->Body = $correoready;
