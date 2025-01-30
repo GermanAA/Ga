@@ -16,51 +16,35 @@ $smtpUser = $_ENV['SMTP_USER'] ?? ''; // Correo empresarial de Office 365
 $smtpPass = $_ENV['SMTP_PASS'] ?? ''; // Contraseña o Contraseña de Aplicación
 $smtpPort = 587; // Puerto de salida para Office 365
 
-if (empty($secretKey) || empty($smtpUser) || empty($smtpPass)) {
-    die("Error: No se encontraron las variables necesarias en el archivo .env.");
-}
+require 'vendor/autoload.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nombreCliente = $_POST['name'] ?? '';
-    $correo = $_POST['email'] ?? '';
-    $telefono = $_POST['phone'] ?? '';
-    $comentario = $_POST['message'] ?? '';
-    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+$mail = new PHPMailer(true);
 
-    // Validar el CAPTCHA con Google
-    $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
-    $response = file_get_contents($verifyUrl . '?secret=' . $secretKey . '&response=' . $recaptchaResponse);
-    $responseData = json_decode($response);
-
-    if (!$responseData->success) {
-        echo "<div class='alert alert-danger'>Error: CAPTCHA no válido.</div>";
-        exit;
-    }
-    $mail = new PHPMailer;
+try {
+    // Configuración del servidor SMTP de Office 365
     $mail->isSMTP();
-    $mail->Host = 'smtp.office365.com';
-    $mail->Port = 587;
-    $mail->SMTPSecure = 'tls';
-    $mail->SMTPAuth = true;
-    $mail->Username = $smtpUser;
-    $mail->Password = $smtpPass;
-    $mail->SetFrom($smtpUser, 'DEPARTAMENTO DE SISTEMAS - mi empresa');
-    //$mail->addAddress($correo_destinatario, $name);
-    $mail->addAddress($correo, $nombreCliente);
+    $mail->Host       = 'smtp.office365.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $smtpUser; // Cambia por tu correo empresarial
+    $mail->Password   = $smtpPass; // Usa una App Password si es necesario
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // TLS es requerido por Office 365
+    $mail->Port       = 587;
+
+    // Configurar el remitente y el destinatario
+    $mail->setFrom('tu_correo@tudominio.com', 'Tu Nombre');
+    $mail->addAddress('armendariz.german@gmail.com', 'Destinatario de Prueba');
+
+    // Contenido del correo
     $mail->isHTML(true);
-    $mail->Subject = 'INSTRUCTIVO ADMISIONES, mi empresa';
-    //$mail->Body = $correoready;
-    $mail->Body = $comentario;
-    //$mail->AltBody = $correo_plano;
-    $mail->AltBody = $telefono;
-    $mail->CharSet = 'UTF-8';
+    $mail->Subject = 'Prueba de Envío desde PHP con Office 365';
+    $mail->Body    = '<p>Este es un correo de prueba enviado desde PHP con Office 365.</p>';
+    $mail->AltBody = 'Este es un correo de prueba enviado desde PHP con Office 365.';
 
-    if (!$mail->send()) {
-        echo 'El mensaje no se envió.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'Mensaje enviado';
+    // Intentar enviar el correo
+    if ($mail->send()) {
+        echo '✅ El correo se ha enviado correctamente.';
     }
+} catch (Exception $e) {
+    echo "❌ Error al enviar el correo: {$mail->ErrorInfo}";
 }
-
-require 'views/index.view.php';
+?>
